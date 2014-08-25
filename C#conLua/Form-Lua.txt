@@ -1,0 +1,6 @@
+Forms=luanet.System.Windows.Forms
+Drawing=luanet.System.Drawing
+Form=Forms.Form
+Point=Drawing.Point
+form = Form()
+form:ShowDialog()

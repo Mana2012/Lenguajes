@@ -1,0 +1,39 @@
+Forms=luanet.System.Windows.Forms
+Drawing=luanet.System.Drawing
+Form=Forms.Form
+Label=Forms.Label
+Button=Forms.Button
+Point=Drawing.Point
+
+form = Form()
+label1 = Label()
+label2 = Label()
+label3 = Label()
+button1 = Button()
+button2 = Button()
+
+function execute_click(sender,args)
+  label1.Text = "Welcome LUA...!!!"
+  label2.Text = "Esto es LUA?"
+  label3.Text = "Lua script C#"
+end
+
+label1.Text = "Bienvenidos a LUA..!!"
+label2.Text = "Parece increible que esto sea LUA"
+label3.Text = "Bueno, es un script de LUA en C#"
+label1.Location = Point(50,50)
+label2.Location = Point(50,100)
+label3.Location = Point(50,150)
+button1.Text = "Opcion 1"
+button2.Text = "Opcion 2"
+button1.Location = Point(50,200)
+button2.Location = Point(140,200)
+button1.Click:Add(execute_click)
+
+form.Controls:Add(label1)
+form.Controls:Add(label2)
+form.Controls:Add(label3)
+form.Controls:Add(button1)
+form.Controls:Add(button2)
+
+form:ShowDialog()
