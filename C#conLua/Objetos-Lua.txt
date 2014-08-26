@@ -22,8 +22,6 @@ button1.Text = "Opcion 1"
 button2.Text = "Opcion 2"
 button1.Location = Point(50,200)
 button2.Location = Point(140,200)
-button1.Click:Add(execute_click)
-button2.Click:Add(execute_click)
 
 form.Controls:Add(label1)
 form.Controls:Add(label2)
